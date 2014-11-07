@@ -20,7 +20,7 @@ Many interesting problems can be represented with graphs. For example:
 + A graph can represent airline flights between cities, where each city is a node and an edge ⟨a,b⟩ indicates that there is a flight from a to b. The edge label might represent the cost in money (airfare), time (length of flight), or distance.
 + To find walking routes across the UBC campus, you can build a graph where nodes represent buildings and other locations and edges represent walking paths connecting two locations. The label/cost of an edge is the physical length of that path.
 + The World Wide Web can be modelled as a graph with node for every webpage and an edge ⟨a,b⟩ if page a links to page b. The label could indicate the anchor text for a link on page a, or the number of links from page a to page b.
-+ Facebook is essentially a giant graph with nodes for users and edges between friends. (You can see a visualization of the Facebook graph.)
++ Facebook is essentially a giant graph with nodes for users and edges between friends. (You can see a [visualization](http://www.yasiv.com/facebook) of the Facebook graph.)
 
 ### Context for this Machine Problem
 
