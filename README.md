@@ -87,3 +87,16 @@ For a weighted, undirected graph, with all edges having positive weights, we can
 23      return dist[], previous[]
 24  end function
 ```
+
+If we are only interested in a shortest path between vertices `source` and `target`, we can terminate the search at line 13 if `u = target`. Now we can read the shortest path from source to target by reverse iteration:
+
+```
+1  S := empty sequence
+2  u := target
+3  while previous[u] is defined:                // Construct the shortest path with a stack S
+4      insert u at the beginning of S           // Push the vertex into the stack
+5      u := previous[u]                         // Traverse from target to source
+6  end while
+```
+
+Now sequence `S` is the list of vertices constituting one of the shortest paths from source to target, or the empty sequence if no path exists.
