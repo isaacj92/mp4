@@ -28,7 +28,7 @@ You will work with a data set that represents a collection of movies and their r
 
 ## Key Tasks for MP4
 
-### Data Set Specification
+### Understand the Data Set
 
 The data that you will work with for this assignment is in the directory `data`. Here is a description of the files in that directory.
 
@@ -40,3 +40,17 @@ The data that you will work with for this assignment is in the directory `data`.
 + `u.user`: Demographic information about the users. Each row has 
 `user id | age | gender | occupation | zip code`. The user ids are the ones used in the `u.data` data set.
 + `u.occupation`: A list of the occupations.
+
+### Create the Movie Similarity Graph
+
+All ratings are in the range 1-5. Let us assume that a rating of 1 or 2 for a movie implies that someone did not like the movie, and a rating of 4 or 5 implies that someone liked the movie. For some movie, m, let m.likers be the set of reviewers that liked the movie and let m.dislikers be the set of reviewers that did not like the movie.
+
+Let us quantify the similarity/dissimilarity between two movies using reviewer ratings. 
+
+A dissimilarity score between two movies, m1 and m2, that we will define is 
+
+*w(m1,m2) = 1 + total number of reviewers - ((size of the intersection of m1.likers and m2.likers) +  (size of the intersection of m1.dislikers and m2.dislikers))*.
+
+A lower dissimilarity score indicates that the movies are similar.
+
+Create a weighted, undirected, graph where the weight of an edge  is the dissimilarity score between the two movies that the edge connects.
