@@ -53,4 +53,37 @@ A dissimilarity score between two movies, m1 and m2, that we will define is
 
 A lower dissimilarity score indicates that the movies are similar.
 
-Create a weighted, undirected, graph where the weight of an edge  is the dissimilarity score between the two movies that the edge connects.
+Create a weighted, undirected, graph where vertices are movies and edges connect two movies. The weight of an edge  is the dissimilarity score between the two movies that the edge connects.
+
+### Finding Shortest Paths
+
+The central aspect of this machine problem is to find the similarity/dissimilarity between two movies, and we will define this as being the weight of the shortest path between two movies (which need not be the weight of the direct edge between the movies).
+
+For a weighted, undirected graph, with all edges having positive weights, we can use [Dijkstra’s algorithm](http://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) for finding the shortest path between two vertices. The pseudocode for this algorithm is as follows:
+
+```
+ 1  function Dijkstra(Graph, source):
+ 2      dist[source]  := 0                     // Distance from source to source
+ 3      for each vertex v in Graph:            // Initializations
+ 4          if v ≠ source
+ 5              dist[v]  := infinity           // Unknown distance function from source to v
+ 6              previous[v]  := undefined      // Previous node in optimal path from source
+ 7          end if 
+ 8          add v to Q                         // All nodes initially in Q (unvisited nodes)
+ 9      end for
+10      
+11      while Q is not empty:                  // The main loop
+12          u := vertex in Q with min dist[u]  // Source node in first case
+13          remove u from Q 
+14          
+15          for each neighbor v of u:           // where v has not yet been removed from Q.
+16              alt := dist[u] + length(u, v)
+17              if alt < dist[v]:               // A shorter path to v has been found
+18                  dist[v]  := alt 
+19                  previous[v]  := u 
+20              end if
+21          end for
+22      end while
+23      return dist[], previous[]
+24  end function
+```
