@@ -55,6 +55,8 @@ A lower dissimilarity score indicates that the movies are similar.
 
 Create a weighted, undirected, graph where vertices are movies and edges connect two movies. The weight of an edge  is the dissimilarity score between the two movies that the edge connects.
 
+**You will have to select a representation for the graph ADT and clearly state the representation invariant and the abstraction function.** Graphs are often represented using a list of edges or an [adjacency list](http://en.wikipedia.org/wiki/Adjacency_list) or an [adjacency matrix](http://en.wikipedia.org/wiki/Adjacency_matrix).
+
 ### Finding Shortest Paths
 
 The central aspect of this machine problem is to find the similarity/dissimilarity between two movies, and we will define this as being the weight of the shortest path between two movies (which need not be the weight of the direct edge between the movies).
@@ -100,3 +102,15 @@ If we are only interested in a shortest path between vertices `source` and `targ
 ```
 
 Now sequence `S` is the list of vertices constituting one of the shortest paths from source to target, or the empty sequence if no path exists.
+
+**You should implement two shortest path methods: one the simply returns the weight/length of the shortest path between two vertices/node, and another that returns the list of vertices on the shortest path.**
+
+## Submission
+
+You will submit your work by pushing all your code to your group’s private BitBucket repository `mp4`.
+
+## Challenge Task
+
+*If you seek an A+*: Implement a method to group movies by similarity. Partition the vertices of a graph into *k* groups (*k* is a parameter to the function) you maximize the minimum distance between any two partitions. The minimum distance between two partitions is defined as
+**	.	d<sup>*</sup> := min{d(u,v) : (u,v) ∈ E;u,v are not in the same subgroup.}** 
+
