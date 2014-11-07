@@ -111,6 +111,5 @@ You will submit your work by pushing all your code to your group’s private Bit
 
 ## Challenge Task
 
-*If you seek an A+*: Implement a method to group movies by similarity. Partition the vertices of a graph into *k* groups (*k* is a parameter to the function) you maximize the minimum distance between any two partitions. The minimum distance between two partitions is defined as
-**	.	d<sup>*</sup> := min{d(u,v) : (u,v) ∈ E;u,v are not in the same subgroup.}** 
+*If you seek an A+*: Implement a method to group movies by similarity. Partition the vertices of a graph into *k* groups (*k* is a parameter to the function) you maximize the minimum distance between any two partitions. The minimum distance between two partitions is defined as _d<sup>*</sup> := min{d(u,v) : (u,v) ∈ E;u,v are not in the same subgroup.}_ 
 
