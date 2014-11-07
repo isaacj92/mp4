@@ -6,7 +6,7 @@ Machine Problem 4: Movies and Graphs
 
 In this machine problem, you will design, implement, test and utilize an abstract data type that represents a graph.
 
-A graph is a collection of vertices/nodes and edges. An edge connects two vertices/nodes. Suppose v<sub>1</sub> and v<sub>2</sub> are two vertices then an edge from v<sub>1</sub> to v<sub>2</sub>, also denoted by the pair (v<sub>1</sub>, v<sub>2</sub>), indicates that v<sub>1</sub> can directly be reached from v<sub>2</sub> and vice versa. In a directed graph, edges are one-way. In this case, the edge (v<sub>1</sub>, v<sub>2</sub>) indicates that v<sub>1</sub> is reachable directly from v<sub>2</sub> but v<sub>1</sub> cannot be reached from v<sub>2</sub> along this edge. The children of a vertex/node v are the vertices to which there is an edge from v. 
+A graph is a collection of vertices/nodes and edges. An edge connects two vertices/nodes. Suppose v<sub>1</sub> and v<sub>2</sub> are two vertices then an edge from v<sub>1</sub> to v<sub>2</sub>, also denoted by the pair (v<sub>1</sub>, v<sub>2</sub>), indicates that v<sub>1</sub> can directly be reached from v<sub>2</sub> and vice versa. In a directed graph, edges are one-way. In this case, the edge (v<sub>1</sub>, v<sub>2</sub>) indicates that v<sub>2</sub> is reachable directly from v<sub>1</sub> but v<sub>1</sub> cannot be reached from v<sub>2</sub> along this edge. The children of a vertex/node v are the vertices to which there is an edge from v. 
 
 A path from v<sub>1</sub> to v<sub>2</sub> in a graph is a sequence of edges that starts at vertex v<sub>1</sub> and ends at vertex v<sub>2</sub>. In other words, a path is an ordered list of edges. 
 
