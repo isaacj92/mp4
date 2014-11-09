@@ -110,7 +110,8 @@ public class MovieGraph {
 	 *         by their movie ids. This path begins at the movie represented by
 	 *         movieId1 and ends with the movie represented by movieId2.
 	 */
-	public List<Movie> getShortestPath(int movieId1, int movieId2) throws NoSuchMovieException {
+	public List<Movie> getShortestPath(int movieId1, int movieId2)
+			throws NoSuchMovieException {
 		// TODO: Implement this method
 		return null;
 	}
@@ -137,17 +138,17 @@ public class MovieGraph {
 	}
 
 	// Implement the next two methods for completeness of the MovieGraph ADT
-	
+
 	@Override
 	public boolean equals(Object other) {
 		// TODO: Implement this
 		return false;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		// TODO: Implement a reasonable hash code method
 		return 42;
 	}
-	
+
 }
