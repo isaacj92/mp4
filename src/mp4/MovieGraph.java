@@ -13,8 +13,8 @@ public class MovieGraph {
 
 	/**
 	 * Add a new movie to the graph. If the movie already exists in the graph
-	 * then this method should return false. Otherwise this method should add
-	 * the movie to the graph and return true.
+	 * then this method will return false. Otherwise this method will add the
+	 * movie to the graph and return true.
 	 * 
 	 * @param movie
 	 *            the movie to add to the graph. Requires that movie != null.
@@ -29,8 +29,8 @@ public class MovieGraph {
 
 	/**
 	 * Add a new edge to the graph. If the edge already exists in the graph then
-	 * this method should return false. Otherwise this method should add the
-	 * edge to the graph and return true.
+	 * this method will return false. Otherwise this method will add the edge to
+	 * the graph and return true.
 	 * 
 	 * @param movie1
 	 *            one end of the edge being added. Requires that m1 != null.
