@@ -83,14 +83,14 @@ public class MovieGraph {
 	 *            the id of the movie at one end of the path.
 	 * @param moviedId2
 	 *            the id of the movie at the other end of the path.
-	 * @throws IllegalArgumentException
+	 * @throws NoSuchMovieException
 	 *             if one or both arguments are not vertices in the graph.
 	 * 
 	 * @return the length of the shortest path between the two movies
 	 *         represented by their movie ids.
 	 */
 	public int getShortestPathLength(int moviedId1, int moviedId2)
-			throws IllegalArgumentException {
+			throws NoSuchMovieException {
 		// TODO: Implement this method
 		return 0;
 	}
@@ -103,14 +103,14 @@ public class MovieGraph {
 	 *            the id of the movie at one end of the path.
 	 * @param moviedId2
 	 *            the id of the movie at the other end of the path.
-	 * @throws IllegalArgumentException
+	 * @throws NoSuchMovieException
 	 *             if one or both arguments are not vertices in the graph.
 	 * 
 	 * @return the shortest path, as a list, between the two movies represented
 	 *         by their movie ids. This path begins at the movie represented by
 	 *         movieId1 and ends with the movie represented by movieId2.
 	 */
-	public List<Movie> getShortestPath(int movieId1, int movieId2) {
+	public List<Movie> getShortestPath(int movieId1, int movieId2) throws NoSuchMovieException {
 		// TODO: Implement this method
 		return null;
 	}
