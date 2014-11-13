@@ -94,7 +94,7 @@ public class MovieIterator {
 			try {
 
 				releaseYear = Integer.parseInt(columns[1].substring(idx1 + 1,
-						idx2 - 1));
+						idx2));
 			} catch (Exception e) {
 				releaseYear = 1900; // default year if we do not have a good
 									// match
