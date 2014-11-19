@@ -35,6 +35,15 @@ public class Movie {
 	}
 	
 	/**
+	 * return the ID of the movie
+	 * @return movie id
+	 */
+	public int getID() {
+		return id;
+	}
+	
+	
+	/**
 	 * hashCode for equality testing
 	 */
 	@Override
@@ -48,9 +57,10 @@ public class Movie {
 	 */
 	@Override
 	public boolean equals(Object other) {
-		// TODO: Implement this method correctly.
-		// TODO: Improve the specification for this method.
-		return false; // this should be changed
+		if(this.hashCode() == ((Movie) other).hashCode()){
+			return true;
+		}
+		return false;
 	}
 	
 }
